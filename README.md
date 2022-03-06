@@ -1,2 +1,2 @@
-# Sorption_MOFs_SL
+# Sorption MOFs SL
 This repository is under construction
