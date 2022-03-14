@@ -41,7 +41,7 @@ for cif in tqdm.tqdm(cif_files):
 Matminer_labels = jarvis.feature_labels()
 Data = pd.DataFrame(jarvis_features, index = cif_files, columns = Matminer_labels)
 ```
-* Go on our Zeonodo and download the model you are interested in, after importing the custom class for dropping the most correlated features, i.e.,
+* Go on our Zeonodo https://doi.org/10.5281/zenodo.6351366 and download the model you are interested in, then importing the custom class for dropping the most correlated features, i.e.,
 
 ```python
 from sklearn.base import TransformerMixin, BaseEstimator
