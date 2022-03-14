@@ -40,7 +40,7 @@ Data = pd.DataFrame(jarvis_features, index = cif_files, columns = Matminer_label
 ```
 * Go on our Zeonodo and download the model you are interested in, after importing the custom class for dropping the most correlated features, i.e.,
 
-```
+```python
 from sklearn.base import TransformerMixin, BaseEstimator
 from joblib import dump, load
 
