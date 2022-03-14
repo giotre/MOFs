@@ -1,7 +1,7 @@
 # Sorption MOFs SL
 This repository contains codes related to the publication "Minimal set of crystallographic descriptors for sorption properties in
 hypothetical Metal Organic Frameworks and their role in sequential learning
-optimization". Datasets and trained pipelines are published on our Zeonodo repository https://doi.org/10.5281/zenodo.6351366. 
+optimization". Datasets and trained pipelines are published on our Zenodo repository https://doi.org/10.5281/zenodo.6351366. 
 
 In particular:
 * Folder ```Models training + SHAP``` contains four ```.ipnyb``` files (one for each of the target properties of interest) to train a Random Forest based pipeline with hyperparameter tuning in 5-fold cross validation + SHAP analysis for detecting important features;
@@ -39,7 +39,7 @@ for cif in tqdm.tqdm(cif_files):
 Matminer_labels = jarvis.feature_labels()
 Data = pd.DataFrame(jarvis_features, index = cif_files, columns = Matminer_labels)
 ```
-* Go on our Zeonodo https://doi.org/10.5281/zenodo.6351366 and download the model you are interested in, then import the custom class for dropping the most correlated features, i.e.,
+* Go on our Zenodo https://doi.org/10.5281/zenodo.6351366 and download the model you are interested in, then import the custom class for dropping the most correlated features, i.e.,
 
 ```python
 from sklearn.base import TransformerMixin, BaseEstimator
@@ -75,4 +75,4 @@ Henry_H2O_model = load('Henry_H2O_model.joblib')
  ```
 
 Otherwise, to use one of the AutoMatminer pretrained pipelines (supplementary material of the paper), download the one you are
-interested in from our Zeonodo https://doi.org/10.5281/zenodo.6351366, and, after the featurization step, follow the instructions here https://hackingmaterials.lbl.gov/automatminer/basic.html#making-predictions.
+interested in from our Zenodo https://doi.org/10.5281/zenodo.6351366, and, after the featurization step, follow the instructions here https://hackingmaterials.lbl.gov/automatminer/basic.html#making-predictions.
