@@ -13,7 +13,7 @@ In particular:
 ## Datasets creation
 We constructed the four MOFs datasets (published here https://doi.org/10.5281/zenodo.6351366), each one with the same 1557 features and a different target property among Henry coefficient for CO2 (column name ```'henry_coefficient_CO2_298K [mol/kg/bar]'```), working capacity for CO2 (column name ```'working_capacity_vacuum_swing_REPEAT_chg [mmol/g]'```), Henry coefficient for H2O (column name ```'henry_coefficient_H2O_298K [mol/kg/bar]'```) and surface area (column name ```'surface_area [m^2/g]'```), taking from here https://archive.materialscloud.org/2018.0016/v3
 * the properties of interest, ```screening_data.tar.gz```, file ```top_MOFs_screening_data.csv``` containing over 8000 potential MOFs
-* the descriptors from the featurization (see below) of the corresponding over 8000 CIF files among the 300000 in MOF_database.tar.gz
+* the descriptors from the featurization (see below) of the corresponding over 8000 CIF files among the 300000 in ```MOF_database.tar.gz```
 
 ## Usage/Examples
 
