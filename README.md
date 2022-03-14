@@ -71,4 +71,4 @@ Henry_H2O_model = load('Henry_H2O_model.joblib')
 * Predict with ```Henry_H2O_model.predict(Data)```
 
 Otherwise, to use one of the AutoMatminer pretrained pipelines (supplementary material of the paper), download the one you are
-interested in from our Zeonodo, and, after the featurization step, follow the instructions here https://hackingmaterials.lbl.gov/automatminer/basic.html#making-predictions.
+interested in from our Zeonodo https://doi.org/10.5281/zenodo.6351366, and, after the featurization step, follow the instructions here https://hackingmaterials.lbl.gov/automatminer/basic.html#making-predictions.
