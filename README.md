@@ -41,7 +41,7 @@ for cif in tqdm.tqdm(cif_files):
 Matminer_labels = jarvis.feature_labels()
 Data = pd.DataFrame(jarvis_features, index = cif_files, columns = Matminer_labels)
 ```
-* Go on our Zeonodo https://doi.org/10.5281/zenodo.6351366 and download the model you are interested in, then importing the custom class for dropping the most correlated features, i.e.,
+* Go on our Zeonodo https://doi.org/10.5281/zenodo.6351366 and download the model you are interested in, then import the custom class for dropping the most correlated features, i.e.,
 
 ```python
 from sklearn.base import TransformerMixin, BaseEstimator
@@ -71,7 +71,7 @@ class MyDecorrelator(BaseEstimator, TransformerMixin):
 Henry_H2O_model = load('Henry_H2O_model.joblib')
 ```
 
-* Predict with ```Henry_H2O_model.predict(Data)```
+* Predict with ```python Henry_H2O_model.predict(Data)```
 
 Otherwise, to use one of the AutoMatminer pretrained pipelines (supplementary material of the paper), download the one you are
 interested in from our Zeonodo https://doi.org/10.5281/zenodo.6351366, and, after the featurization step, follow the instructions here https://hackingmaterials.lbl.gov/automatminer/basic.html#making-predictions.
