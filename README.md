@@ -1,5 +1,4 @@
 # Sorption MOFs SL
-
 This repository contains codes related to the publication "Minimal set of crystallographic descriptors for sorption properties in
 hypothetical Metal Organic Frameworks and their role in sequential learning
 optimization". Datasets and trained pipelines are published on our Zeonodo repository https://doi.org/10.5281/zenodo.6351366. 
@@ -7,7 +6,7 @@ optimization". Datasets and trained pipelines are published on our Zeonodo repos
 In particular:
 * Folder ```Models training + SHAP``` contains four ```.ipnyb``` files (one for each of the target properties of interest) to train a Random Forest based pipeline with hyperparameter tuning in 5-fold cross validation + SHAP analysis for detecting important features;
 * Folder ```Sequental learning``` contains the code for running the SL (three ```.m``` files for Kriging, one ```.ipnyb``` file for Random-Forest- and COMBO-based methodologies);
-* Folder ```Variable importances``` contains the complete ranking of the features, used to train the RF-regression models, provided by the SHAP analysis;
+* Folder ```Variable importances``` contains the complete ranking of the features, used to train the RF-regression models, provided by the SHAP analysis (for their meaning, please refer to "Machine learning with force-field inspired descriptors for materials: fast screening and mapping energy landscape", doi: 10.1103/physrevmaterials.2.083801)
 * File ```2D Map & Database optimum.ipynb``` contains the Database optimum in terms of the specific energy, its thermodynamic ideal cycle (Fig. 7 of the paper), and the comparative 2D Map (Fig. 6 of the paper).
 
 ## Datasets creation
@@ -16,7 +15,6 @@ We constructed the four MOFs datasets (published here https://doi.org/10.5281/ze
 * the descriptors from the featurization (see below) of the corresponding over 8000 CIF files among the 300000 in ```MOF_database.tar.gz```
 
 ## Usage/Examples
-
 To use one of the RF-pretrained models for doing new predictions:
 
 * Featurize your Crystallographic Information Files (CIFs)
