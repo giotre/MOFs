@@ -25,6 +25,8 @@ import matminer
 from matminer.featurizers.structure import JarvisCFID
 import tqdm
 import pandas as pd
+import pymatgen as mp
+import os
 
 cif_path = 'type the path of the folder containing your CIFs'
 cif_files = os.listdir(cif_path) 
