@@ -1,7 +1,5 @@
 # Sorption MOFs SL
-This repository contains codes related to the publication "Minimal set of crystallographic descriptors for sorption properties in
-hypothetical Metal Organic Frameworks and their role in sequential learning
-optimization". Datasets and trained pipelines are published on our Zenodo repository https://doi.org/10.5281/zenodo.6351366. 
+This repository contains codes related to the publication "Minimal crystallographic descriptors of sorption properties in hypothetical MOFs and role in sequential learning optimization" (https://www.nature.com/articles/s41524-022-00806-7). Datasets and trained pipelines are published on our Zenodo repository https://doi.org/10.5281/zenodo.6351366. 
 
 In particular:
 * Folder ```Models training + SHAP``` contains four ```.ipnyb``` files (one for each of the target properties of interest) to train a Random Forest based pipeline with hyperparameter tuning in 5-fold cross validation + SHAP analysis for detecting important features;
